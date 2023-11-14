@@ -1,0 +1,432 @@
+    * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        text-decoration: none;
+    }
+
+    :focus,
+    :active {
+        outline: none;
+    }
+
+    a:focus,
+    a:active {
+        outline: none;
+    }
+
+    nav,
+    footer,
+    header,
+    aside {
+        display: block;
+    }
+
+    :root {
+        --boss: rgb(160, 160, 160);
+        --colors: rgb(210, 198, 198);
+    }
+
+    input,
+    button,
+    textarea {
+        font-family: inherit;
+    }
+
+    input::-ms-clear {
+        display: none;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    img {
+        vertical-align: top;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: inherit;
+        font-weight: 400;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    body {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ffffffbe, #000000, #ffffffbe, #000000, #ffffffbe);
+        background-size: 200% 200%;
+        animation: gradientAnimation 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 100%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background: #ffffffbe;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .header-p {
+        font-family: 'Permanent Marker', cursive;
+        padding: 10px;
+    }
+
+    .header-logo {
+        font-family: 'Permanent Marker', cursive;
+        margin-right: 800px;
+    }
+
+    .photo-card {
+        position: absolute;
+        left: 250px;
+        top: 0;
+        width: 300px;
+        opacity: 30%;
+        z-index: 0;
+    }
+
+    .block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        height: 300px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        margin: 0 auto;
+        margin-top: 100px;
+        border-radius: 20px;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .block_title {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    .block_text {
+        margin: 0 auto;
+        font-family: 'Permanent Marker', cursive;
+        position: relative;
+        z-index: 1;
+        bottom: 30px;
+    }
+
+
+    .block_photo {
+        width: 60px;
+        position: relative;
+        z-index: 1;
+        margin-left: 50px;
+        bottom: 70px;
+    }
+
+    .card_number {
+        text-align: center;
+        font-family: 'Permanent Marker', cursive;
+        position: relative;
+        z-index: 1;
+        bottom: 50px;
+    }
+
+    .card_container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card_cv {
+        display: flex;
+        font-family: 'Permanent Marker', cursive;
+        position: relative;
+        z-index: 1;
+        bottom: 20px;
+    }
+
+    .card_year {
+        display: flex;
+        font-family: 'Permanent Marker', cursive;
+        position: relative;
+        z-index: 1;
+        bottom: 20px;
+    }
+
+    .name___surname {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name_name {
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .name_surname {
+        font-family: 'Permanent Marker', cursive;
+        right: 100px;
+    }
+
+    .input0 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 900px;
+        height: 400px;
+        margin-top: 50px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    /*     .input_number-card {
+        width: 500px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .input_name-card {
+        width: 500px;
+        margin-top: 10px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .input_year-card {
+        width: 500px;
+        margin-top: 10px;
+        font-family: 'Permanent Marker', cursive;
+    } */
+    .label {
+        font-family: 'Permanent Marker', cursive;
+
+    }
+
+    .button {
+        width: 100px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .button-number {
+        position: relative;
+        border-radius: 20px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        margin-top: 10px;
+        box-shadow: 2px 4px 5px #00000097;
+        transition: 0.4s;
+    }
+
+    .button-number:hover {
+        box-shadow: -2px -4px 5px #00000097;
+        color: #ffffff;
+        z-index: 1;
+    }
+
+    .button-number::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0%;
+        background-image: radial-gradient(circle, rgb(79, 76, 76), rgb(252, 252, 252));
+        border-radius: 20px;
+        left: 0;
+        bottom: 0;
+        transition: 0.4s;
+    }
+
+    .button-number:hover::after {
+        height: 100%;
+        z-index: -1;
+    }
+
+    .button-cv {
+        position: relative;
+        border-radius: 20px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        margin-top: 10px;
+        box-shadow: 2px 4px 5px #00000097;
+        transition: 0.4s;
+    }
+
+    .button-cv:hover {
+        box-shadow: -2px -4px 5px #00000097;
+        color: #ffffff;
+        z-index: 1;
+    }
+
+    .button-cv::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0%;
+        background-image: radial-gradient(circle, rgb(79, 76, 76), rgb(252, 252, 252));
+        border-radius: 20px;
+        left: 0;
+        top: 0;
+        transition: 0.4s;
+    }
+
+    .button-cv:hover::after {
+        height: 100%;
+        z-index: -1;
+    }
+
+    .button-year {
+        border-radius: 20px;
+    }
+
+    .button-name {
+        border-radius: 20px;
+    }
+
+    .button-surname {
+        border-radius: 20px;
+    }
+
+    .bt-number {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .bt-cv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .bt-year {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .bt-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bt-surname {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    /* .input1{
+        border-radius: 20px;
+        width: 200px;
+    }
+    .input2{
+        border-radius: 20px;
+        width: 200px;
+    } */
+    .input-name {
+        font-family: 'Permanent Marker', cursive;
+        border-radius: 20px;
+        height: 25px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        box-shadow: 2px 4px 5px #00000097;
+    }
+
+    .input-surname {
+        font-family: 'Permanent Marker', cursive;
+        border-radius: 20px;
+        height: 25px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        box-shadow: 2px 4px 5px #00000097;
+        margin-bottom: 35px;
+    }
+
+    .date {
+        border-radius: 20px;
+        width: 150px;
+        height: 30px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        font-family: 'Permanent Marker', cursive;
+        position: relative;
+        z-index: 1;
+    }
+
+    .bt-cv-year {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .forma {
+        position: relative;
+    }
+
+    .forma-label {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .text-about {
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .chek-modal {
+        position: absolute;
+        bottom: 100px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        color: #000000;
+        font-family: 'Oswald', sans-serif;
+        border-radius: 20px;
+        padding: 15px;
+        opacity: 0;
+        user-select: none;
+        transition: 0.5s;
+    }
+
+    .chek-modal.active {
+        opacity: 1;
+        bottom: -50px;
+    }

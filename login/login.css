@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+
+body {
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(fon.png);
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 200px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.h1 {
+    font-family: 'Playpen Sans', cursive;
+    margin: 0 auto;
+}
+
+.email {
+    font-family: 'Playpen Sans', cursive;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.password {
+    font-family: 'Playpen Sans', cursive;
+    width: 100%;
+}
+
+.email.new {
+    box-shadow: 0 0 10px green;
+    transition: 0.4s;
+}
+
+.email.delate {
+    box-shadow: 0 0 10px red;
+    transition: 0.4s;
+}
+
+.button {
+    height: 20px;
+    color: grey;
+    background: #000;
+}
