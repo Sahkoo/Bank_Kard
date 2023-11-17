@@ -78,3 +78,24 @@ textAbout.addEventListener("click", function () {
         chekModal.classList.remove("active")
     }
 });
+
+
+/* let newColor = document.querySelector(".block")
+let cardColor = document.querySelector(".color")
+
+newColor.addEventListener("click", function () {
+    if (cardColor.style.background = "radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76))") {
+        cardColor.style.background = "red"
+    }
+}); */
+
+
+let newButton = document.querySelector(".xrest")
+
+newButton.addEventListener("click", function () {
+    if (chekModal.className === "chek-modal") {
+        chekModal.classList.add("active")
+    } else {
+        chekModal.classList.remove("active")
+    }
+});

@@ -373,9 +373,12 @@
         height: 25px;
         background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
         box-shadow: 2px 4px 5px #00000097;
+        z-index: 1;
     }
 
     .input-surname {
+        position: relative;
+        z-index: 1;
         font-family: 'Permanent Marker', cursive;
         border-radius: 20px;
         height: 25px;
@@ -424,9 +427,34 @@
         opacity: 0;
         user-select: none;
         transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .chek-modal.active {
         opacity: 1;
         bottom: -50px;
+    }
+
+    /* .but {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .color {
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        font-family: 'Permanent Marker', cursive;
+        border-radius: 20px;
+        width: 300px;
+        height: 50px;
+        animation: gradientAnimation 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+    } */
+    .xrest{
+        width: 30px;
+        height: 30px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        box-shadow: 2px 4px 5px #00000097;
+        border-radius: 5px;
     }
