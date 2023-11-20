@@ -4,95 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Kard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./icon-cash.png" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Login-form</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="shortcut icon" href="login.jpg" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <p class="header-p">NEW CARD</p>
-        <p class="header-p">CREDIT</p>
-        <p class="header-p">HOME</p>
-        <p class="header-logo">SKULL BANK</p>
-        <p class="header-text">SKULL BANK - Банк, у якому все неможливе - стає реальним.</p>
-    </header>
-
-
-    <div id="block" class="block">
-        <img class="photo-card" src="./bra.jpg" alt="">
-        <div class="block_title">
-            <p class="block_text">Universal Card</p>
-            <p class="block_text">SKULL BANK</p>
-        </div>
-        <img class="block_photo" src="./card.png" alt="">
-        <p class="card_number"></p>
-        <div class="card_container">
-            <p class="card_cv"></p>
-            <p class="card_year"></p>
-        </div>
-        <div class="name___surname">
-            <span class="name_name"></span>
-            <span class="name_surname"></span>
-        </div>
-    </div>
-    <div class="input0">
-        <div class="bt bt-number">
-            <label class="label" for="">Get Card Number</label>
-            <!-- <input class="input1" type="text"> -->
-            <button class="button button-number">GET</button>
-        </div>
-        <div class="bt-cv-year">
-            <div class="bt bt-cv">
-                <label class="label" for="">Get Card cv-code</label>
-                <!-- <input class="input2" type="text"> -->
-                <button class="button button-cv">GET</button>
-            </div>
-            <div class="bt bt-year">
-                <label class="label" for="">Date Received</label>
-                <input class="date" type="date">
-                <!-- <button class="button button-year">GET</button> -->
-            </div>
-        </div>
-        <div class="bt bt-name">
-            <label class="label" for="">Enter Name</label>
-            <input class="input-name" type="text">
-            <!-- <button class="button button-name">CLICK</button> -->
-        </div>
-        <div class="bt bt-surname">
-            <label class="label" for="">Enter Surname</label>
-            <input class="input-surname" type="text">
-            <!-- <button class=" button button-surname">CLICK</button> -->
-        </div>
-        <div class="forma">
-            <label for="dog" class="forma-label">
-                Користуючись цим веб-сайтом, ви підтверджуєте, що ознайомились з нашою <span
-                    class="text-about">Політикою конфіденційності</span> та
-                погоджуєтеся з умовами обробки вашої особистої інформації, як написано у цьому документі. Якщо ви не
-                погоджуєтесь, будь ласка, не продовжуйте користуватися цим веб-сайтом.
-                <br>
-                Я ознайомився(-лась).
-            </label>
-            <div class="chek-modal">
-                <p>Дякуємо за використання наших послуг. Наша компанія зобов'язана забезпечити конфіденційність та
-                    захист персональної інформації користувачів. Ця політика конфіденційності надається для забезпечення
-                    розуміння того, як ми обробляємо вашу інформацію. Дякуємо за довіру та використання наших послуг.
-                </p>
-                <button class="xrest"><img src="./хрестик.png" alt=""></button>
-            </div>
-            <input class="forma-input" type="checkbox" id="dog">
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <form class="form" action="">
+        <h1 class="h1">Login</h1>
+        <input placeholder="Your Name" type="name" class="name">
+        <input placeholder="Your Email" type="email" class="email">
+        <input placeholder="Your Password" type="password" class="password">
+        <input type="checkbox">
+        <button class="button">Click</button>
+    </form>
+    <script src="./login.js"></script>
 </body>
 
 </html>
