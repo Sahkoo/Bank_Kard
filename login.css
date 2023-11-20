@@ -24,11 +24,15 @@ body {
     margin: 0 auto;
 }
 
+.name{
+    font-family: 'Playpen Sans', cursive;
+    width: 100%;
+}
 .email {
     font-family: 'Playpen Sans', cursive;
     width: 100%;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .password {

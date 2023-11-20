@@ -119,8 +119,26 @@
     .header-logo {
         font-family: 'Permanent Marker', cursive;
         margin-right: 800px;
+        cursor: pointer;
     }
 
+    .header-text {
+        font-family: 'Permanent Marker', cursive;
+        position: absolute;
+        width: 200px;
+        height: 70px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        border-radius: 20px;
+        padding: 15px;
+        left: -250px;
+        top: 100px;
+        transition: 0.5s;
+    }
+    .header-text.active {
+        opacity: 1;
+        bottom: -50px;
+        left: 130px;
+    }
     .photo-card {
         position: absolute;
         left: 250px;
@@ -167,6 +185,7 @@
         z-index: 1;
         margin-left: 50px;
         bottom: 70px;
+        border-radius: 5px;
     }
 
     .card_number {
@@ -437,21 +456,7 @@
         bottom: -50px;
     }
 
-    /* .but {
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
-    }
-
-    .color {
-        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
-        font-family: 'Permanent Marker', cursive;
-        border-radius: 20px;
-        width: 300px;
-        height: 50px;
-        animation: gradientAnimation 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
-    } */
-    .xrest{
+    .xrest {
         width: 30px;
         height: 30px;
         background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));

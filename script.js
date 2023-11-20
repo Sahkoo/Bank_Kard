@@ -80,15 +80,6 @@ textAbout.addEventListener("click", function () {
 });
 
 
-/* let newColor = document.querySelector(".block")
-let cardColor = document.querySelector(".color")
-
-newColor.addEventListener("click", function () {
-    if (cardColor.style.background = "radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76))") {
-        cardColor.style.background = "red"
-    }
-}); */
-
 
 let newButton = document.querySelector(".xrest")
 
@@ -97,5 +88,19 @@ newButton.addEventListener("click", function () {
         chekModal.classList.add("active")
     } else {
         chekModal.classList.remove("active")
+    }
+});
+
+
+
+let skullBank = document.querySelector(".header-logo")
+let skullP = document.querySelector(".header-text")
+
+
+skullBank.addEventListener("click", function() {
+    if (skullP.className === "header-text") {
+        skullP.classList.add("active")
+    } else {
+        skullP.classList.remove("active")
     }
 });

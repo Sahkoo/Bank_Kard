@@ -26,3 +26,11 @@ email2.addEventListener("input", function () {
     }
 
 });
+
+
+let buttonWin = document.querySelector(".button")
+
+buttonWin.addEventListener("click", (event) => {
+    event.preventDefault()
+    window.location.href = "index.html";
+});
