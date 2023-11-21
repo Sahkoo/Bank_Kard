@@ -6,6 +6,18 @@ body {
     background-size: cover;
 }
 
+.cont {
+    display: flex;
+}
+
+.img {
+    width: 400px;
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -14,7 +26,8 @@ body {
     width: 500px;
     padding: 20px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 100px;
+    /* margin-left: 350px; */
     align-items: center;
     border-radius: 20px;
 }
@@ -22,22 +35,62 @@ body {
 .h1 {
     font-family: 'Playpen Sans', cursive;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.name{
-    font-family: 'Playpen Sans', cursive;
-    width: 100%;
+.form-box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
 }
-.email {
-    font-family: 'Playpen Sans', cursive;
-    width: 100%;
+
+.form-box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    width: 80%;
     margin-bottom: 30px;
     margin-top: 30px;
+    border-radius: 20px;
 }
 
-.password {
+.form-box3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.zam {
+    width: 24px;
+    height: 24px
+}
+
+.name {
     font-family: 'Playpen Sans', cursive;
-    width: 100%;
+    width: 90%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.email {
+    font-family: 'Playpen Sans', cursive;
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+
 }
 
 .email.new {
@@ -46,6 +99,24 @@ body {
 }
 
 .email.delate {
+    box-shadow: 0 0 10px red;
+    transition: 0.4s;
+}
+
+.password {
+    font-family: 'Playpen Sans', cursive;
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+.password.new {
+    box-shadow: 0 0 10px green;
+    transition: 0.4s;
+}
+
+.password.delate {
     box-shadow: 0 0 10px red;
     transition: 0.4s;
 }
