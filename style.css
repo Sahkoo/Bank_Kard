@@ -104,6 +104,7 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        flex-wrap: wrap;
         width: 100%;
         height: 100px;
         background: #ffffffbe;
@@ -114,12 +115,15 @@
     .header-p {
         font-family: 'Permanent Marker', cursive;
         padding: 10px;
+        color: gold;
+        cursor: pointer;
     }
 
     .header-logo {
         font-family: 'Permanent Marker', cursive;
         margin-right: 800px;
         cursor: pointer;
+        color: gold;
     }
 
     .header-text {
@@ -262,6 +266,7 @@
     } */
     .label {
         font-family: 'Permanent Marker', cursive;
+        color: gold;
 
     }
 
@@ -423,7 +428,9 @@
     }
 
     .forma {
+        display: flex;
         position: relative;
+        flex-wrap: wrap;
     }
 
     .forma-label {

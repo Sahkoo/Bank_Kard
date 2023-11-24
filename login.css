@@ -8,6 +8,7 @@ body {
 
 .cont {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .img {
@@ -22,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(fon.png);
+    background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
     width: 500px;
     padding: 20px;
     margin: 0 auto;
@@ -70,6 +71,26 @@ body {
     border-radius: 20px;
 }
 
+.form-box4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.form-box5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
 .zam {
     width: 24px;
     height: 24px
@@ -84,13 +105,22 @@ body {
     outline: none;
 }
 
+.name::placeholder {
+    color: gold;
+    text-shadow: 2px 0 2px #000;
+}
+
 .email {
     font-family: 'Playpen Sans', cursive;
     width: 90%;
     height: 50px;
     border: none;
     outline: none;
+}
 
+.email::placeholder {
+    color: gold;
+    text-shadow: 2px 0 2px #000;
 }
 
 .email.new {
@@ -111,6 +141,11 @@ body {
     outline: none;
 }
 
+.password::placeholder {
+    color: gold;
+    text-shadow: 2px 0 2px #000;
+}
+
 .password.new {
     box-shadow: 0 0 10px green;
     transition: 0.4s;
@@ -121,8 +156,26 @@ body {
     transition: 0.4s;
 }
 
+.input-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
 .button {
     height: 20px;
     color: grey;
     background: #000;
+    cursor: pointer;
+}
+
+.tel{
+    font-family: 'Playpen Sans', cursive;
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+.tel::placeholder {
+    color: gold;
+    text-shadow: 2px 0 2px #000;
 }
