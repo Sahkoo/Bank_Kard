@@ -16,23 +16,38 @@
             <h1 class="h1">Login</h1>
             <div class="form-box1">
                 <img src="User.png" alt="">
-                <input placeholder="Your Name" type="name" class="name">
+                <input placeholder="Your Name" type="text" class="name">
+                <div class="form-box1-modal">
+                    <p>Введіть ім'я</p>
+                </div>
             </div>
             <div class="form-box2">
                 <img src="mail.png" alt="">
                 <input placeholder="Your Email" type="email" class="email">
+                <div class="form-box2-modal">
+                    <p>Невірний формат електронної адреси.</p>
+                </div>
             </div>
             <div class="form-box3">
                 <img class="zam" src="замок.png" alt="">
                 <input placeholder="Your Password" type="password" class="password">
+                <div class="form-box3-modal">
+                    <p>Пароль повинен складатись що найменше з 7 символів.</p>
+                </div>
             </div>
             <div class="form-box4">
                 <img src="tel.png" alt="">
-                <input placeholder="Your Phone" type="phone" class="tel">
+                <input placeholder="Your Phone" type="tel" class="phone">
+                <div class="form-box4-modal">
+                    <p>Номер телефону повинен мати 13 символів та +.</p>
+                </div>
             </div>
             <div class="form-box5">
                 <p>Я погоджуюсь з умовами користування.</p>
                 <input class="input-checkbox" type="checkbox">
+                <div class="form-box5-modal">
+                    <p>Чекбокс не використовується.</p>
+                </div>
             </div>
             <button type="button" class="button">Реєстрація</button>
         </form>
@@ -44,6 +59,7 @@
 
 
     <script src="./login.js"></script>
+    <script src="./skr.js"></script>
 </body>
 
 </html>

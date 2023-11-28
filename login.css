@@ -4,6 +4,8 @@ body {
     background-image: url(fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .cont {
@@ -27,7 +29,7 @@ body {
     width: 500px;
     padding: 20px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     /* margin-left: 350px; */
     align-items: center;
     border-radius: 20px;
@@ -91,6 +93,7 @@ body {
     border-radius: 20px;
     font-family: 'Playpen Sans', cursive;
 }
+
 .zam {
     width: 24px;
     height: 24px
@@ -163,19 +166,135 @@ body {
 
 .button {
     height: 20px;
-    color: grey;
+    color: gold;
     background: #000;
     cursor: pointer;
 }
 
-.tel{
+.phone {
     font-family: 'Playpen Sans', cursive;
     width: 90%;
     height: 50px;
     border: none;
     outline: none;
 }
-.tel::placeholder {
+
+.phone::placeholder {
     color: gold;
     text-shadow: 2px 0 2px #000;
+}
+
+.form-box1-modal {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+    opacity: 0;
+    transition: 0.5s;
+    right: -200px;
+    border-radius: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.form-box1-modal.active {
+    opacity: 1;
+    right: 20px;
+}
+
+
+
+.form-box2-modal {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+    opacity: 0;
+    transition: 0.5s;
+    right: -200px;
+    border-radius: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.form-box2-modal.active {
+    opacity: 1;
+    right: 20px;
+}
+
+
+
+
+.form-box3-modal {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+    opacity: 0;
+    transition: 0.5s;
+    right: -200px;
+    border-radius: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.form-box3-modal.active {
+    opacity: 1;
+    right: 20px;
+}
+
+
+
+
+
+.form-box4-modal {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+    opacity: 0;
+    transition: 0.5s;
+    right: -200px;
+    border-radius: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.form-box4-modal.active {
+    opacity: 1;
+    right: 20px;
+}
+
+
+
+.form-box5-modal {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+    opacity: 0;
+    transition: 0.5s;
+    right: -200px;
+    border-radius: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.form-box5-modal.active {
+    opacity: 1;
+    right: 20px;
 }

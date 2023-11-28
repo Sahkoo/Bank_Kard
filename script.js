@@ -93,7 +93,7 @@ newButton.addEventListener("click", function () {
 
 
 
-let skullBank = document.querySelector(".header-logo")
+let skullBank = document.querySelector(".header-img")
 let skullP = document.querySelector(".header-text")
 
 

@@ -119,10 +119,17 @@
         cursor: pointer;
     }
 
+    .header-img {
+        width: 60px;
+        height: 80px;
+        border-radius: 10px 40px 10px 40px;
+        margin-right: 400px;
+        cursor: pointer;
+    }
+
     .header-logo {
         font-family: 'Permanent Marker', cursive;
-        margin-right: 800px;
-        cursor: pointer;
+        margin-right: 400px;
         color: gold;
     }
 
@@ -138,11 +145,13 @@
         top: 100px;
         transition: 0.5s;
     }
+
     .header-text.active {
         opacity: 1;
         bottom: -50px;
-        left: 130px;
+        left: 80px;
     }
+
     .photo-card {
         position: absolute;
         left: 250px;
@@ -383,14 +392,6 @@
         margin-top: 15px;
     }
 
-    /* .input1{
-        border-radius: 20px;
-        width: 200px;
-    }
-    .input2{
-        border-radius: 20px;
-        width: 200px;
-    } */
     .input-name {
         font-family: 'Permanent Marker', cursive;
         border-radius: 20px;

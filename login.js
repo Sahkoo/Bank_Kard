@@ -1,86 +1,12 @@
-let email = document.querySelector(".email")
-
-email.addEventListener("input", function () {
-    let emailValue = email.value;
-
-    if (emailValue.length > 5 && emailValue.includes("@")) {
-        email.classList.add("new");
-        email.classList.remove("delate");
-    } else if (emailValue.length === 0) {
-        email.classList.remove("delate")
-        email.classList.remove("new")
-    } else {
-        email.classList.remove("new")
-        email.classList.add("delate")
-    }
-});
-
-let email2 = document.querySelector(".email")
-
-email2.addEventListener("input", function () {
-    let email2Value = email2.value;
-
-    if (email2Value.querySelector == "@") {
-        email2.classList.add("new")
-        email2.classList.remove("delate")
-    }
-
-});
-
-
-let buttonWin = document.querySelector(".button")
-
-buttonWin.addEventListener("click", (event) => {
-    event.preventDefault()
-    window.location.href = "nologin.html";
-});
-
-
-
-
-let password = document.querySelector(".password")
-
-password.addEventListener("input", function () {
-    let passwordValue = password.value;
-
-    if (passwordValue.length > 8) {
-        password.classList.add("new");
-        password.classList.remove("delate");
-    } else if (passwordValue.length === 0) {
-        password.classList.remove("delate")
-        password.classList.remove("new")
-    } else {
-        password.classList.remove("new")
-        password.classList.add("delate")
-    }
-});
-
-let password2 = document.querySelector("password")
-
-password2.addEventListener("input", function () {
-    let password2Value = password2.value;
-
-    if (password2Value.querySelector) {
-        password2.classList.add("new")
-        password2.classList.remove("delate")
-    }
-
-});
-
-
-
-
-
-
-
-
+// Модалки //
 let button = document.querySelector(".button")
 
-button.addEventListener("clock", function () {
+button.addEventListener("click", function () {
     let name = document.querySelector(".name")
     let email = document.querySelector(".email")
     let password = document.querySelector(".password")
     let phone = document.querySelector(".phone")
+    let chkbox = document.querySelector(".input-checkbox")
 
     let userName = name.value
     let userEmail = email.value
@@ -90,22 +16,45 @@ button.addEventListener("clock", function () {
 
 
     if (userName.length === 0) {
-        alert("Введіть своє ім'я.")
-        return;
+        let newFormBox = document.querySelector(".form-box1-modal")
+        newFormBox.classList.add("active")
+
+        setTimeout(function () {
+            newFormBox.classList.remove("active")
+        }, 3000);
+    }
+    else if (!userEmail.includes("@")) {
+        let newFormBox2 = document.querySelector(".form-box2-modal")
+        newFormBox2.classList.add("active")
+
+        setTimeout(function () {
+            newFormBox2.classList.remove("active")
+        }, 3000);
     }
     else if (userPassword.length < 7) {
-        alert("Пароль повинен складатись що найменше з 7 символів.")
-        return;
+        let newFormBox3 = document.querySelector(".form-box3-modal")
+        newFormBox3.classList.add("active")
+
+        setTimeout(function () {
+            newFormBox3.classList.remove("active")
+        }, 3000);
     }
     else if (userPhone.length !== 13 || !userPhone.includes("+")) {
-        alert("Номер телефону повинен мати 13 символів та +.")
-        return;
+        let newFormBox4 = document.querySelector(".form-box4-modal")
+        newFormBox4.classList.add("active")
+
+        setTimeout(function () {
+            newFormBox4.classList.remove("active")
+        }, 3000);
     }
-    else if (userEmail.includes("@")) {
-        alert("Невірний формат електронної адреси.")
-        return;
-    }
-    else {
-        window.location.href = "./index.html"
+    else if (!chkbox.checked) {
+        let newFormBox5 = document.querySelector(".form-box5-modal")
+        newFormBox5.classList.add("active")
+
+        setTimeout(function () {
+            newFormBox5.classList.remove("active")
+        }, 3000);
+    } else {
+        window.location.href = "./nologin.html"
     }
 });
