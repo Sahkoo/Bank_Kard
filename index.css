@@ -99,6 +99,11 @@ body {
     height: 24px
 }
 
+.zamok{
+    width: 100px;
+    height: 50px;
+}
+
 .name {
     font-family: 'Playpen Sans', cursive;
     width: 90%;
@@ -237,13 +242,14 @@ body {
     justify-content: center;
     position: absolute;
     width: 200px;
-    height: 70px;
+    height: 90px;
     background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
     opacity: 0;
     transition: 0.5s;
     right: -200px;
     border-radius: 20px;
     font-family: 'Playpen Sans', cursive;
+    padding: 10px;
 }
 
 .form-box3-modal.active {

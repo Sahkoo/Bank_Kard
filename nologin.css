@@ -133,6 +133,12 @@
         color: gold;
     }
 
+    .header-name{
+        position: absolute;
+        font-family: 'Permanent Marker', cursive;
+        right: 900px;
+    }
+
     .header-text {
         font-family: 'Permanent Marker', cursive;
         position: absolute;

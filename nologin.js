@@ -97,10 +97,17 @@ let skullBank = document.querySelector(".header-img")
 let skullP = document.querySelector(".header-text")
 
 
-skullBank.addEventListener("click", function() {
+skullBank.addEventListener("click", function () {
     if (skullP.className === "header-text") {
         skullP.classList.add("active")
     } else {
         skullP.classList.remove("active")
     }
 });
+
+
+
+
+
+let userName = sessionStorage.getItem("userName")
+document.getElementById("header-name").innerText = userName

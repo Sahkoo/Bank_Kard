@@ -55,6 +55,15 @@ button.addEventListener("click", function () {
             newFormBox5.classList.remove("active")
         }, 3000);
     } else {
+        sessionStorage.setItem("userName", userName)
         window.location.href = "./nologin.html"
     }
 });
+
+
+
+
+
+
+
+
