@@ -99,7 +99,7 @@ body {
     height: 24px
 }
 
-.zamok{
+.zamok {
     width: 100px;
     height: 50px;
 }
@@ -202,6 +202,7 @@ body {
     transition: 0.5s;
     right: -200px;
     border-radius: 20px;
+    border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
 }
 
@@ -224,6 +225,7 @@ body {
     transition: 0.5s;
     right: -200px;
     border-radius: 20px;
+    border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
 }
 
@@ -248,6 +250,7 @@ body {
     transition: 0.5s;
     right: -200px;
     border-radius: 20px;
+    border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
     padding: 10px;
 }
@@ -274,6 +277,7 @@ body {
     transition: 0.5s;
     right: -200px;
     border-radius: 20px;
+    border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
 }
 
@@ -297,6 +301,7 @@ body {
     transition: 0.5s;
     right: -200px;
     border-radius: 20px;
+    border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
 }
 
