@@ -104,7 +104,7 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        text-align: center;
+        justify-content: center;
         /* flex-wrap: wrap; */
         width: 100%;
         height: 100px;
@@ -114,7 +114,6 @@
         position: fixed;
         z-index: 1;
         top: 0;
-
         transform: scale(1);
         opacity: 1;
         transition: 0.7s;
@@ -138,20 +137,17 @@
         width: 60px;
         height: 80px;
         border-radius: 10px 40px 10px 40px;
-        margin-right: 400px;
         cursor: pointer;
     }
 
     .header-logo {
         font-family: 'Permanent Marker', cursive;
-        margin-right: 400px;
         color: gold;
     }
 
     .header-name {
-        position: absolute;
         font-family: 'Permanent Marker', cursive;
-        right: 900px;
+        color: gold;
     }
 
     .header-text {
@@ -171,6 +167,16 @@
         opacity: 1;
         bottom: -50px;
         left: 80px;
+    }
+
+    .headerr {
+        display: flex;
+    }
+
+    .headerr2 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 300px;
     }
 
     .photo-card {

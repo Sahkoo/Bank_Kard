@@ -3,7 +3,7 @@
     body {
         background-image: url(fon.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
         position: relative;
         overflow-x: hidden;
     }
@@ -46,7 +46,7 @@
     body {
         background-image: url(obj2.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 500%;
         position: relative;
         overflow-x: hidden;
     }
@@ -54,7 +54,7 @@
     .cont {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
@@ -92,7 +92,7 @@
 
 @media (max-width:480px) {
     body {
-        background-image: url(obj1.jpg);
+        background: #000;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
