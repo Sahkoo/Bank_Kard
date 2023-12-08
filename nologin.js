@@ -111,3 +111,57 @@ skullBank.addEventListener("click", function () {
 
 let userName = sessionStorage.getItem("userName")
 document.getElementById("header-name").innerText = userName
+
+
+
+window.addEventListener("scroll", function () {
+    let block = document.querySelector(".input0")
+    if(scrollY > 180){
+        block.classList.add("new")
+    }else{
+        block.classList.remove("new")
+    }
+});
+
+
+window.addEventListener("scroll", function () {
+    let photoCard = document.querySelector(".photo-card")
+    if(scrollY > 180){
+        photoCard.classList.remove("new")
+    }else{
+        photoCard.classList.add("new")
+    }
+});
+
+
+
+window.addEventListener("scroll", function () {
+    let headerH = document.querySelector(".header")
+    if(scrollY > 180){
+        headerH.classList.add("new")
+    }else{
+        headerH.classList.remove("new")
+    }
+});
+
+
+
+let mouseMove = document.querySelector(".header-logo")
+
+mouseMove.addEventListener("mouseover", function(){
+document.addEventListener("mousemove", function(){
+    let x = event.clientX
+    let y = event.clientY
+    mouseMove.style.transform = `translate(${x}px, ${y}px)`
+})
+});
+
+
+
+mouseMove.addEventListener("mouseout", function(){
+    document.addEventListener("mousemove", function(){
+        let x = event.clientX
+        let y = event.clientY
+        mouseMove.style.transform = `translate(${x}px, ${y}px)`
+    })
+    });

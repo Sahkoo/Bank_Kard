@@ -1,0 +1,129 @@
+@media (max-width:1024px) {
+
+    body {
+        background-image: url(fon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .img {
+        max-width: 400px;
+        height: 500px;
+        margin-top: 70px;
+        border-radius: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        width: 500px;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 50px;
+        align-items: center;
+        border-radius: 20px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+
+    body {
+        background-image: url(obj2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img {
+        max-width: 100%;
+        height: 500px;
+        margin-top: 70px;
+        border-radius: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        width: 600px;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 50px;
+        align-items: center;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    body {
+        background-image: url(obj1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img {
+        max-width: 100%;
+        height: 500px;
+        margin-top: 70px;
+        border-radius: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 50px;
+        align-items: center;
+        border-radius: 20px;
+    }
+}
