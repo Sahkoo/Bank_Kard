@@ -450,6 +450,7 @@
         font-family: 'Permanent Marker', cursive;
         position: relative;
         z-index: 1;
+        cursor: pointer;
     }
 
     .bt-cv-year {
@@ -475,7 +476,7 @@
 
     .chek-modal {
         position: absolute;
-        bottom: 100px;
+        bottom: 50px;
         background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
         color: #000000;
         font-family: 'Oswald', sans-serif;

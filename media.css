@@ -27,7 +27,6 @@
         flex-direction: row-reverse;
         align-items: center;
         text-align: center;
-        /* flex-wrap: wrap; */
         width: 100%;
         height: 100px;
         background: #ffffff;
@@ -39,6 +38,16 @@
         transform: scale(1);
         opacity: 1;
         transition: 0.7s;
+    }
+
+    .headerr {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    .headerr2 {
+        margin: 0 auto;
     }
 
     .header.new {
@@ -55,12 +64,12 @@
     }
 
     .header-img {
-        /* width: 60px;
+        width: 60px;
         height: 80px;
         border-radius: 10px 40px 10px 40px;
         margin-right: 400px;
-        cursor: pointer; */
-        display: none;
+        cursor: pointer; 
+        margin: 0 auto;
     }
 
     .header-logo {
@@ -70,8 +79,169 @@
     }
 
     .header-name {
-        /* position: absolute; */
         font-family: 'Permanent Marker', cursive;
+    }
+
+    .header-text {
+        font-family: 'Permanent Marker', cursive;
+        position: absolute;
+        width: 200px;
+        height: 70px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        border-radius: 20px;
+        padding: 15px;
+        left: -250px;
+        top: 100px;
+        transition: 0.5s;
+    }
+
+    .header-text.active {
+        opacity: 1;
+        bottom: -50px;
+        left: 80px;
+    }
+
+    .block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        height: 300px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        margin: 0 auto;
+        margin-top: 250px;
+        border-radius: 20px;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .photo-card {
+        position: absolute;
+        left: 250px;
+        top: 0;
+        width: 300px;
+        opacity: 30%;
+        z-index: 0;
+        transform: scale(0);
+        transition: 1.5s;
+        margin-top: -400px;
+    }
+
+    .photo-card.new {
+        margin-top: 0px;
+        transform: scale(1);
+        opacity: 30%;
+    }
+
+    .input0 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+        height: 500px;
+        margin-top: 120px;
+        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
+        border-radius: 20px;
+        padding: 20px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #ffffffbe, #000000, #ffffffbe, #000000, #ffffffbe);
+        background-size: 200% 200%;
+        animation: gradientAnimation 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 100%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+        width: 100%;
+        height: 120px;
+        background: #ffffff;
+        margin: 0 auto;
+        border-radius: 20px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.7s;
+    }
+
+    .headerr {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    .headerr2 {
+        margin: 0 auto;
+    }
+
+    .header.new {
+        transform: scale(1);
+        opacity: 1;
+        background: #000;
+        color: #fff;
+    }
+
+    .header-p {
+        font-family: 'Permanent Marker', cursive;
+        color: gold;
+        cursor: pointer;
+    }
+
+    .header-img {
+        width: 60px;
+        height: 80px;
+        border-radius: 10px 40px 10px 40px;
+        margin-right: 400px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .header-logo {
+        font-family: 'Permanent Marker', cursive;
+        color: gold;
+        display: none; 
+    }
+
+    .header-name {
+        font-family: 'Permanent Marker', cursive;
+        color: gold;
     }
 
     .header-text {
@@ -99,7 +269,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 90%;
+        width: 70%;
         height: 300px;
         background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
         margin: 0 auto;
@@ -129,32 +299,7 @@
         opacity: 30%;
         display: none;
     }
-
-    .input0 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        width: 90%;
-        height: 500px;
-        margin-top: 120px;
-        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
-        border-radius: 20px;
-        padding: 20px;
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px) {}
 
 
 
@@ -209,14 +354,12 @@
 
     .headerr {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        margin-right: 20px;
     }
 
     .headerr2 {
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        padding: 10px;
+        margin: 0 auto;
     }
 
     .header.new {
@@ -244,7 +387,7 @@
     .header-logo {
         font-family: 'Permanent Marker', cursive;
         color: gold;
-        display: none;
+        display: none; 
     }
 
     .header-name {
@@ -319,25 +462,5 @@
         background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
         border-radius: 20px;
         padding: 20px;
-    }
-
-    .input-name {
-        font-family: 'Permanent Marker', cursive;
-        border-radius: 20px;
-        height: 25px;
-        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
-        box-shadow: 2px 4px 5px #00000097;
-        z-index: 1;
-    }
-
-    .input-surname {
-        position: relative;
-        z-index: 1;
-        font-family: 'Permanent Marker', cursive;
-        border-radius: 20px;
-        height: 25px;
-        background-image: radial-gradient(circle, rgb(252, 252, 252), rgb(79, 76, 76));
-        box-shadow: 2px 4px 5px #00000097;
-        margin-bottom: 35px;
     }
 }
