@@ -177,7 +177,7 @@
     .headerr2 {
         display: flex;
         flex-direction: row-reverse;
-        padding: 300px;
+        margin: 300px;
     }
 
     .photo-card {
@@ -273,12 +273,11 @@
 
     .name_name {
         font-family: 'Permanent Marker', cursive;
-        margin-left: 30px;
     }
 
     .name_surname {
         font-family: 'Permanent Marker', cursive;
-        right: 100px;
+        margin-left: 10px;
     }
 
     .input0 {

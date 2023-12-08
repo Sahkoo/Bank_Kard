@@ -177,6 +177,7 @@ body {
 .input-checkbox {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .button {
@@ -213,7 +214,7 @@ body {
     border-radius: 20px;
     border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
-    margin-left: 225px;
+    margin-bottom: 210px;
 }
 
 .form-box1-modal.active {
@@ -235,7 +236,7 @@ body {
     border-radius: 20px;
     border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
-    margin-left: 225px;
+    margin-bottom: 380px;
 }
 
 .form-box2-modal.active {
@@ -260,7 +261,7 @@ body {
     border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
     padding: 10px;
-    margin-left: 225px;
+    margin-bottom: 530px;
 }
 
 .form-box3-modal.active {
@@ -285,7 +286,7 @@ body {
     border-radius: 20px;
     border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
-    margin-left: 225px;
+    margin-bottom: 760px;
 }
 
 .form-box4-modal.active {
@@ -308,8 +309,7 @@ body {
     border-radius: 20px;
     border: 4px solid gold;
     font-family: 'Playpen Sans', cursive;
-    margin-top: 100px;
-    margin-left: 235px;
+    margin-bottom: 950px;
 }
 
 .form-box5-modal.active {
