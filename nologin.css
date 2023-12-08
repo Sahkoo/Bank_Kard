@@ -148,6 +148,7 @@
     .header-name {
         font-family: 'Permanent Marker', cursive;
         color: gold;
+        margin-right: 10px;
     }
 
     .header-text {
